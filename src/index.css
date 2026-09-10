@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Manrope:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* B.Right Brand Palette
+   #136363 Cidade das Esmeraldas — primary teal
+   #14192D Fúcsia Estelar — deep navy (foreground / dark sections)
+   #E6E5C7 Creme de Areia — background cream
+   #C8E54A Limão Neon — accent lime
+   #3E3B2D Café Selvagem — dark olive
+*/
+
+@layer base {
+  :root {
+    --background: 58 41% 92%;
+    --foreground: 229 38% 13%;
+
+    --card: 58 41% 96%;
+    --card-foreground: 229 38% 13%;
+
+    --popover: 58 41% 96%;
+    --popover-foreground: 229 38% 13%;
+
+    --primary: 180 69% 23%;
+    --primary-foreground: 58 41% 92%;
+
+    --secondary: 58 41% 84%;
+    --secondary-foreground: 229 38% 13%;
+
+    --muted: 58 25% 88%;
+    --muted-foreground: 48 16% 30%;
+
+    --accent: 73 75% 59%;
+    --accent-foreground: 229 38% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 48 16% 75%;
+    --input: 48 16% 75%;
+    --ring: 180 69% 23%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 58 41% 92%;
+    --sidebar-foreground: 229 38% 13%;
+    --sidebar-primary: 180 69% 23%;
+    --sidebar-primary-foreground: 58 41% 92%;
+    --sidebar-accent: 73 75% 59%;
+    --sidebar-accent-foreground: 229 38% 13%;
+    --sidebar-border: 48 16% 75%;
+    --sidebar-ring: 180 69% 23%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(180 69% 23%), hsl(180 60% 18%), hsl(229 38% 13%));
+    --section-gradient: linear-gradient(180deg, hsl(58 41% 92%), hsl(58 41% 88%));
+    --card-shadow: 0 4px 24px -4px hsl(229 38% 13% / 0.08);
+    --card-shadow-hover: 0 8px 32px -4px hsl(229 38% 13% / 0.18);
+
+    --font-display: 'Bricolage Grotesque', sans-serif;
+    --font-body: 'Manrope', sans-serif;
+  }
+
+  .dark {
+    --background: 229 38% 8%;
+    --foreground: 58 41% 92%;
+    --card: 229 38% 11%;
+    --card-foreground: 58 41% 92%;
+    --popover: 229 38% 11%;
+    --popover-foreground: 58 41% 92%;
+    --primary: 180 69% 35%;
+    --primary-foreground: 58 41% 92%;
+    --secondary: 229 30% 16%;
+    --secondary-foreground: 58 41% 92%;
+    --muted: 229 25% 18%;
+    --muted-foreground: 58 20% 70%;
+    --accent: 73 75% 59%;
+    --accent-foreground: 229 38% 13%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 229 25% 22%;
+    --input: 229 25% 22%;
+    --ring: 73 75% 59%;
+    --sidebar-background: 229 38% 8%;
+    --sidebar-foreground: 58 41% 92%;
+    --sidebar-primary: 73 75% 59%;
+    --sidebar-primary-foreground: 229 38% 13%;
+    --sidebar-accent: 229 30% 16%;
+    --sidebar-accent-foreground: 58 41% 92%;
+    --sidebar-border: 229 25% 22%;
+    --sidebar-ring: 73 75% 59%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--hero-gradient);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 px-6 md:px-12 lg:px-20;
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border rounded-2xl;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

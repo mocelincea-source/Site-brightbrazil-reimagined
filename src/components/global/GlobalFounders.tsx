@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import larissa from "@/assets/larissa.webp";
-import cecilia from "@/assets/cecilia.webp";
+import larissa from "@/assets/larissa.jpg";
+import cecilia from "@/assets/cecilia.jpeg";
 
 const founders = [
   {
@@ -49,8 +49,8 @@ const GlobalFounders = () => {
                     src={founder.image}
                     alt={founder.name}
                     className="w-full h-full object-cover object-center"
+                    loading="lazy"
                     decoding="async"
-                    loading="eager"
                   />
                 </div>
                 <div className="p-8">

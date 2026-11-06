@@ -66,7 +66,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Estratégia, governança e relatórios alinhados aos maiores frameworks globais, transformando compliance em valor competitivo.
+              Estratégia, governança e relatórios alinhados aos maiores frameworks globais, transformando estratégia em valor competitivo.
             </motion.p>
 
             <motion.a

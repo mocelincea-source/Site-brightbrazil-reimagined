@@ -28,7 +28,7 @@ const features = [
 
 const GlobalHero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-36 md:pt-40 pb-16">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-28 md:pt-32 pb-16">
       {/* Background */}
       <div className="absolute inset-0">
         <img src={globalHeroBg} alt="" className="w-full h-full object-cover" />

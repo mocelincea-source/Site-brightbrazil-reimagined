@@ -19,13 +19,6 @@ const GlobalNavbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      {/* Top banner */}
-      <div className="bg-primary text-primary-foreground text-center py-2 px-4">
-        <a href="#masterclass" className="text-sm font-medium hover:underline">
-          Join our Masterclass: ESG & Communication in Practice →
-        </a>
-      </div>
-
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/global" className="flex-shrink-0">
           <img src={logo} alt="B.Right Logo" className="h-10 md:h-12" />

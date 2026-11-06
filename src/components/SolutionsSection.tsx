@@ -49,7 +49,10 @@ const categories: { key: string; label: string; intro: string; items: Solution[]
     items: [
       { num: "08", title: "Adequação a regulações", desc: "CVM, Susep, Bacen, IFRS, União Europeia e EUA, sem zonas cinzentas." },
       { num: "11", title: "Certificação Sistema B (B Lab)", desc: "Assessoria completa para obter a certificação Empresa B pelo B Lab Brasil." },
-      { num: "12", title: "ISO 14001 e Selo Pró-Ética", desc: "Caminho estruturado para certificações de sustentabilidade e governança." },
+      { num: "17", title: "ISO 37001 — Sistemas de gestão antissuborno", desc: "Caminho estruturado para a certificação do sistema de gestão antissuborno." },
+      { num: "18", title: "ISO 37301 — Sistemas de gestão de compliance", desc: "Caminho estruturado para a certificação do sistema de gestão de compliance." },
+      { num: "12", title: "ISO 14001 — Sistemas de gestão ambiental", desc: "Caminho estruturado para a certificação de gestão ambiental." },
+      { num: "16", title: "Selo Pró-Ética", desc: "Caminho estruturado para o reconhecimento de integridade e governança." },
     ],
   },
   {
@@ -57,7 +60,7 @@ const categories: { key: string; label: string; intro: string; items: Solution[]
     label: "Comunicação",
     intro: "Capacitação dos times e narrativas que comunicam de forma estratégica seu compromisso ESG.",
     items: [
-      { num: "13", title: "Workshops e Cursos In-Company", desc: "Programas exclusivos, baseados em cases reais, com certificação e relatório." },
+      { num: "13", title: "Workshops e Cursos In-Company", desc: "Programas exclusivos, baseados em cases reais, com certificação e relatório. Inclui produção de treinamentos sobre compliance, ESG e certificações." },
       { num: "14", title: "Vídeo Institucional de Sustentabilidade", desc: "Traduzimos seu compromisso ESG em vídeo, gravado em estúdio próprio." },
       { num: "15", title: "Campanhas para mídias sociais e TV", desc: "Comunicação consistente para fortalecer a imagem sustentável da marca." },
     ],

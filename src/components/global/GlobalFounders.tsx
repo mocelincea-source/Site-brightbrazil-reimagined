@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import larissa from "@/assets/larissa.jpg";
 import cecilia from "@/assets/cecilia.jpeg";
+import joaoVitor from "@/assets/joao-vitor.jpeg";
 
 const founders = [
   {
@@ -16,6 +17,15 @@ const founders = [
     bio: "Cecilia Romero is the founding partner of C. Romero Advocacia and co-founder of B.Right ESG Business Consulting. She graduated in Law from PUC-Rio and earned her LL.M. from NYU School of Law in 2017.\n\nShe has over twelve years of professional experience in Compliance, Corporate Governance, Risk Management and Data Privacy. Before entrepreneurship, she served as Legal & Compliance Director at Britech S.A., overseeing compliance, data privacy, M&A and international partnerships in Europe and the United States.\n\nShe worked as an international associate at the U.S. law firm Jones Day (2014–2015), representing one of the largest U.S. retail companies in a multi-million dollar settlement for violation of the U.S. anti-corruption law (FCPA).",
     phone: "(11) 91315-1348",
     email: "cecilia@brightbrazil.co",
+  },
+];
+
+const team = [
+  {
+    name: "João Vitor Santos Paixão",
+    image: joaoVitor,
+    role: "ESG Researcher and Consultant",
+    bio: "João Vitor Santos Paixão works at B.Right with research, content development, and support for structuring sustainability projects. He holds a degree in Agronomic Engineering from ESALQ/USP, is a registered professional at CREA, and is certified as an Integrated Management System Internal Auditor based on ISO 9001, ISO 14001, and ISO 45001 standards. He has experience in sustainability, ESG, research, project management, and data analysis.",
   },
 ];
 
@@ -64,6 +74,48 @@ const GlobalFounders = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-10 text-center"
+          >
+            <h3 className="text-2xl md:text-3xl font-display text-foreground leading-tight">Our Team</h3>
+          </motion.div>
+
+          <div className="flex justify-center flex-wrap gap-8">
+            {team.map((member, i) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
+                className="w-full max-w-sm"
+              >
+                <div className="glass-card overflow-hidden">
+                  <div className="aspect-[2/3] overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-center"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-display text-xl text-foreground mb-2">{member.name}</h4>
+                    <p className="text-primary text-sm font-medium mb-4">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm">{member.bio}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

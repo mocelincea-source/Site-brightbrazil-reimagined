@@ -63,6 +63,7 @@ const categories: { key: string; label: string; intro: string; items: Solution[]
       { num: "13", title: "Workshops e Cursos In-Company", desc: "Programas exclusivos, baseados em cases reais, com certificação e relatório. Inclui produção de treinamentos sobre compliance, ESG e certificações." },
       { num: "14", title: "Vídeo Institucional de Sustentabilidade", desc: "Traduzimos seu compromisso ESG em vídeo, gravado em estúdio próprio." },
       { num: "15", title: "Campanhas para mídias sociais e TV", desc: "Comunicação consistente para fortalecer a imagem sustentável da marca." },
+      { num: "19", title: "Produção de treinamentos em compliance, ESG e certificações", desc: "Criamos conteúdos didáticos e trilhas de capacitação sob medida para engajar sua equipe e garantir o alinhamento com as normas e estratégias do negócio." },
     ],
   },
 ];

@@ -22,6 +22,7 @@ const solutions = [
   { num: "17", title: "Institutional video about your sustainability strategy", desc: "We produce institutional videos that translate your ESG and sustainability commitment clearly and strategically, recorded in our own studio with a specialised team." },
   { num: "18", title: "Campaigns for social media and television", desc: "We create communication campaigns to strengthen your brand's sustainability positioning. From planning to final content, we ensure strategic coherence, an ethical narrative, and impact across the right channels." },
   { num: "19", title: "Gamification of ESG & Compliance training", desc: "Bring ESG culture and compliance practices to the centre of your organisation in an engaging, didactic and effective way. With B.Right's exclusive methodology, we transform corporate training into gamified experiences tailored for mid-size and large companies. We combine storytelling, interactive challenges and results measurement to increase engagement, reinforce values and ensure adherence to regulatory guidelines. Innovative solutions that strengthen organisational culture and position your company ahead in sustainability and corporate ethics practices." },
+  { num: "20", title: "Production of Compliance, ESG, and Certifications Training", desc: "We create tailored educational content and training tracks to engage your team and ensure alignment with industry standards and business strategies." },
 ];
 
 const SolutionItem = ({ solution }: { solution: typeof solutions[0] }) => {

@@ -16,7 +16,7 @@ const tabs = [
     label: "Quem somos",
     eyebrow: "Quem somos na B.Right",
     headline:
-      "Combinamos profundidade técnica em ESG com visão estratégica de negócio para transformar compliance em valor competitivo real.",
+      "Combinamos profundidade técnica em ESG com visão estratégica de negócio para transformar estratégia em valor competitivo real.",
     description:
       "Cada projeto é desenhado para gerar impacto mensurável, ambiental, social e econômico, sustentando organizações em jornadas de longo prazo.",
   },

@@ -10,9 +10,11 @@ import ravato from "@/assets/clients/ravato.png";
 import rodoil from "@/assets/clients/rodoil.png";
 import sertrading from "@/assets/clients/sertrading.png";
 import ultracargo from "@/assets/clients/ultracargo.png";
+import f1 from "@/assets/clients/F1.png";
 
 const logos = [
   { src: syngenta, alt: "Syngenta" },
+  { src: f1, alt: "Fórmula 1" },
   { src: hrz, alt: "HRZ" },
   { src: vtal, alt: "V.tal" },
   { src: cargopetro, alt: "Cargopetro" },
